@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(59, 212, 212);
+}
+
+#container{
+    overflow: hidden;
+    height: 450px;
+    width: 350px;
+    background-color: rgb(252, 250, 250);
+    border-radius: 10px;
+    position: relative;
+}
+
+#container img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#container i{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%) scale(0);
+     opacity: 0;
+     transition: transform ease 0.4s;
+}
